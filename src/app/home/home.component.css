@@ -1,0 +1,199 @@
+.hero-container {
+    background: url('../../assets/images/francesco-ungaro-1180157-unsplash.jpg')center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .book-now-container {
+    padding: 35px 115px;
+  }
+  
+  .book-now-button {
+    width: 170px;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
+  
+  .header-container {
+  
+    padding: 60px 20px;
+    text-align: center;
+   
+  }
+  
+  .mat-display-4 {
+    color: white;
+  }
+  .mat-display-1 {
+    margin:0;
+    padding-top: 110px;
+  }
+  
+ 
+  
+  .goa {
+    transform: translate(-50%, 50%);
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  .goa h3 {
+    -webkit-text-fill-color: transparent;
+    background: url('../../assets/images/francesco-ungaro-1180157-unsplash.jpg')bottom right repeat;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-stretch: normal;
+    font-size: 200px;
+    font-family: Rubik, sans-serif;
+    letter-spacing: 0.09em;
+    font-weight: 500;
+    position: relative;
+    left: 50%;
+    top:58%;  
+  }
+  .home{
+    padding-top: 70px;
+  }
+  
+  .home-section {
+    position: relative;
+    transform: transale3d(0,0,0);
+    transition: top .3s cubic-bezier(.4,0,.2,1);
+    text-align: center;
+    
+  }
+  .home-section .mat-subheading-3 {
+    text-transform: uppercase;
+  }
+  
+  .rooms-home-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+  }
+  
+  .rooms-home-display .mat-card{
+      position: relative;
+      text-align: center;
+  }
+  .rooms-home-display mat-card-header h2 {
+    color: white;
+    font-size: 34.54px;	letter-spacing: 0.25px;	line-height: 43px;
+    color: rgba(0,0,0,0.87);
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  .rooms-home-display mat-card-header {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    height: 53px;
+    width: 100%;
+    background: rgba(255, 248, 225,.5);
+  }
+  
+  .rooms-home-display mat-card-actions {
+    position: absolute;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .rooms-home-display mat-card {
+    height: 587px;
+    position: relative;
+    text-align: center;
+    margin: 1%;
+  }
+  
+  
+  .rooms{
+    background: url('../../assets/images/759042.JPG')center center no-repeat;
+    background-size: cover;
+    height: calc(100vh - 500px);
+    
+  }
+  .beach{
+    background: url('../../assets/images/beach-houses.jpg')center center no-repeat;
+    background-size: cover;
+    height: calc(100vh - 500px);
+    
+  }
+  .accomodation{
+    background: url('../../assets/images/weddings.jpg')center center no-repeat;
+    background-size: cover;
+    height: calc(100vh - 500px);
+    
+  }
+  .celebrations{
+    background: url('../../assets/images/celebrations.jpg')center center no-repeat;
+    background-size: cover;
+    height: calc(100vh - 500px);
+    
+  }
+  .food{
+    background: url('../../assets/images/food.jpg')center center no-repeat;
+    background-size: cover;
+    height: calc(100vh - 500px);
+    
+  }
+  .lifestyle{
+    background: url('../../assets/images/lifestyle.jpg')center center no-repeat;
+    background-size: cover;
+    height: calc(100vh - 500px);
+    
+  }  
+  button {
+      min-height: 40px;
+      min-width: 141px;
+  }
+ .first-form{
+   display: grid;
+ }
+ 
+ 
+  @media all and (max-width: 768px) {
+    .goa h3{
+        font-size:150px;
+    }
+  }
+  
+  @media all and (max-width: 680px) {
+    .header-container .mat-display-4 {
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+  
+    .header-container .mat-display-1 {
+        font-size: 3rem;
+        line-height: 1.1;
+        margin: 0 0 15px;
+    }
+    .home-section h2 {
+      font-size: 2rem;
+    }
+    .rooms-suites {
+        background-size: cover;
+        min-width: 100%;
+        min-height: 520px;
+        background-repeat: no-repeat;
+    }
+    .beach-houses {
+        background-size: cover;
+        min-width: 100%;
+        min-height: 520px;
+        background-repeat: no-repeat;
+    }
+  }
+  

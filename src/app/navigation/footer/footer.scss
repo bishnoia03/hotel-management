@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+@mixin navtabs-component-theme($mydream) {
+
+    $primary: map-get($mydream, primary);
+    $acceent: map-get($mydream, accent);
+
+    //All our style will go here....
+   .footer{
+        background-color: mat-color($mydream-primary,800 );
+    }
+    .copyright{
+        background-color: mat-color($mydream-primary,400);
+    }
+}

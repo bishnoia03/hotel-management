@@ -1,0 +1,9 @@
+.toolbar-flex{
+    flex:1 0.5 auto;
+}
+.navtabs-container nav a{
+    text-decoration: none;
+    }
+.navtabs-container nav a:hover{
+    color: #000000;
+}

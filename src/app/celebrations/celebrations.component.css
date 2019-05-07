@@ -1,0 +1,51 @@
+.wedding img{
+    height:500px;
+    width: 100%;
+    object-fit: cover;
+}
+.sec2{
+    background: #ccc;
+    text-align: center;
+    height: 300px;
+    
+}
+.sec2 p{
+    color:teal;     
+    font-size: 32px;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.sec2 h4{
+    color: rgb(117, 108, 108);  
+    margin: 40px;
+}
+.sec3 img{
+    height:500px;
+    width: 100%;
+    object-fit: cover;
+}
+.sec3{
+    position: relative;
+    
+}
+.sec3 p{
+    position: absolute;
+    left:25%;
+    top:50%;
+    font-size: 40px;
+    color: #ccc;   
+    font-weight: bold; 
+}
+.mat-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+mat-card{
+    height:620px;
+   margin: 20px;
+}
+.text p{
+    margin: 20px;
+}

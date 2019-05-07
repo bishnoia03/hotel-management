@@ -1,0 +1,49 @@
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img img{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.text{
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+.group{
+    padding-top: 30px;
+
+}
+.main{
+    border:1px solid #ccc;
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+.main h1{
+    padding-top: 30px;
+  
+}
+.grid_img{
+    margin: 20px;
+}
+.grid_img a img:hover{
+    box-shadow: 1px 0px 14px 5px #2323e1bd;
+    
+}
+.offer{
+    position: absolute;
+    z-index: 1;
+    width: 110px;
+    height: 70px;
+    left: 7%;
+    top: 7%;
+}
+.btm-img{
+    margin: 30px;
+}

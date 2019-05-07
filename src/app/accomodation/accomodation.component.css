@@ -1,0 +1,125 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.card{
+    width: 80%;
+    text-align: center;
+    
+    }
+    .mat-img{
+        margin: 10px;
+    }
+    .single{
+        background: url('../../assets/images/singlebed.jpg')center center no-repeat;
+        background-size: cover;
+        min-height: 400px;
+       }
+       .twin{
+        background: url('../../assets/images/twin.jpg')center center no-repeat;
+        background-size: cover;
+        min-height: 400px;
+       }
+       .tripple{
+        background: url('../../assets/images/tripple.jpg')center center no-repeat;
+        background-size: cover;
+        min-height: 400px;
+       }
+       .king{
+        background: url('../../assets/images/king.jpg')center center no-repeat;
+        background-size: cover;
+        min-height: 400px;
+       }
+       .queen{
+        background: url('../../assets/images/queen.jpg')center center no-repeat;
+        background-size: cover;
+        min-height: 400px;
+       }
+       .seaface{
+        background: url('../../assets/images/seaface.jpg')center center no-repeat;
+        background-size: cover;
+        min-height: 400px;
+       }
+       button {
+        min-height: 40px;
+        min-width: 141px;
+    }
+    .rooms-home-display mat-card-actions {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .rooms-home-display mat-card-header {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        color: #000000;
+        font-size: 34px;
+        height: 53px;
+        width: 100%;
+        background: rgba(255, 248, 225,.5);
+      }
+      button {
+        min-height: 30px !important;
+        min-width: 60px !important;
+        font-size: 14px !important;
+        line-height: 0px; 
+  }
+     .modal-content{
+    width:60%;
+    margin: calc(100% - 400px);
+    display: flex;
+    align-items: center;
+    justify-content: center;          
+    }
+    .modal .fa,
+.fas {
+    color: green;
+}
+      @media (max-width:600px){
+        .single{
+            background: url('../../assets/images/singlebed.jpg')center center no-repeat;
+            background-size: cover;
+            min-height: 400px;
+            min-width:350px;
+           }
+           .twin{
+            background: url('../../assets/images/twin.jpg')center center no-repeat;
+            background-size: cover;
+            min-height: 400px;
+            min-width:350px;
+           }
+           .tripple{
+            background: url('../../assets/images/tripple.jpg')center center no-repeat;
+            background-size: cover;
+            min-height: 400px;
+            min-width:350px;
+           }
+           .king{
+            background: url('../../assets/images/king.jpg')center center no-repeat;
+            background-size: cover;
+            min-height: 400px;
+            min-width:350px;
+           }
+           .queen{
+            background: url('../../assets/images/queen.jpg')center center no-repeat;
+            background-size: cover;
+            min-height: 400px;
+            min-width:350px;
+           }
+           .seaface{
+            background: url('../../assets/images/seaface.jpg')center center no-repeat;
+            background-size: cover;
+            min-height: 400px;
+            min-width:350px;
+           }
+           .mat-img{
+               text-align: center;
+           }
+      }

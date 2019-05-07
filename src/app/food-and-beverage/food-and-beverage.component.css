@@ -1,0 +1,134 @@
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.container-fluid{
+   position: relative;
+}
+.zaika{
+    position: absolute;
+    color: #fff;
+  
+    font-family: 'Cute Font', cursive;
+   top: 40%;
+   left: 25%;
+}
+.zaika h1{
+    font-size: 6rem;
+    text-align: center;
+}
+.item{
+    width:100%;
+    height:300px;
+    
+    object-fit: cover;
+    filter: brightness(30%);
+
+}
+.expansion1{
+    background: url('../../assets/images/north-indian.jpg');
+    background-attachment: fixed;
+    object-fit: cover;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.expansion2{
+    background: url('../../assets/images/south-indian.jpg');
+    background-attachment: fixed;
+    object-fit: cover;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.expansion3{
+    background: url('../../assets/images/fast-food.jpg');
+    background-attachment: fixed;
+    object-fit: cover;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.expansion4{
+    background: url('../../assets/images/wine-bottle.jpg');
+    background-attachment: fixed;
+    object-fit: cover;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.expansion-head{
+    margin-top:40px; 
+    margin-bottom: 40px;
+}
+.panel-title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exp-inner{
+    background: #000;
+    min-height: 200px;
+    width:90%;
+    opacity: 0.8;
+}
+mat-expansion-panel{
+    margin: 8px;
+}
+mat-grid-tile {
+    background: lightblue;
+  }
+.mat-card{
+    height: 1030px;
+    margin-top: 40px;
+}
+.mat-card p,h3{
+    padding-left: 40px;
+}
+.offer-img{
+    max-width: 100%;
+    height: 287px;
+    width: 507px;
+    object-fit: cover;
+}
+.mat-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+    
+    
+}
+.mat-btn button{
+    border: #ccc solid 1px;
+    margin: 2px;
+}
+.pizza{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.exp-inner h3{
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:767px) {
+    .exp-inner h3{
+        font-size: 15px;
+        color: #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ }

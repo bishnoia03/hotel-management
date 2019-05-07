@@ -1,0 +1,97 @@
+.head-section img{
+    width: 100%;
+    object-fit: cover;
+    height: 500px; 
+}
+.head-section{
+    position: relative;
+    
+}
+.head-section h1{
+    position: absolute;
+ top: 30%;
+ left: 20%;
+ font-size: 7rem;
+ color: #fff;
+}
+.heading{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+}
+.card-1 mat-card{
+    background: rgb(27, 26, 26);
+}
+.content{
+    color: #fff;
+    text-align: center;
+}
+.yoga{
+    background: url('../../assets/images/bg-yoga.jpg');
+    height: 500px;  
+    background-size: cover;
+    filter: brightness(.9);
+   background-repeat: no-repeat;
+}
+.spa{
+    background: url('../../assets/images/spa-bg.jpg');
+    height: 500px;  
+    background-size: cover;
+    filter: brightness(.9);
+   background-repeat: no-repeat;
+}
+.sport{
+    background: url('../../assets/images/sport-bg.jpg');
+    height: 500px;  
+    background-size:cover;
+    filter: brightness(.9);
+   background-repeat: no-repeat;
+}
+.bgtrans{
+    margin: 0;
+    padding: 0;
+    background: #000000d1;
+    height: 500px;
+}
+h2,h5,h4{
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+.images img{
+  
+    height: 300px;
+    margin: 5px;
+    width: calc(100% - 70%);
+    height: calc(100% - 70%);
+ 
+}
+@media (max-width:767px){
+   h2{
+        font-size: 30px;
+    }
+    h4{
+        font-size:25px;
+    }
+    h5{
+        font-size: 22px;
+    }
+    .spa , .yoga , .sport {
+        height:370px;
+    }
+    .bgtrans{
+        margin: 0;
+        padding: 0;
+        background: #000000d1;
+        height: 370px;
+    }
+}
