@@ -7,23 +7,25 @@ import {MatSnackBar, mixinColor} from '@angular/material';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  message: string;
+  action: string;
   countary: string;
   viewcountary: string;
   isLinear = false;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
-  constructor(private _formBuilder: FormBuilder, private snackBar: MatSnackBar ) { }
-  openSnackBar(message: string, action: string) {
-    this.snackBar.open(message = 'Reservation Success!', action = '', {
+  constructor(private formBuilder: FormBuilder, private snackBar: MatSnackBar ) { }
+  mysnackBar() {
+    this.snackBar.open(this.message = 'Reservation Success!', this.action = '', {
       duration: 4000 ,
 
     });
   }
   ngOnInit() {
-    this.firstFormGroup = this._formBuilder.group({
+    this.firstFormGroup = this.formBuilder.group({
       firstCtrl: ['', Validators.required]
     });
-    this.secondFormGroup = this._formBuilder.group({
+    this.secondFormGroup = this.formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
   }

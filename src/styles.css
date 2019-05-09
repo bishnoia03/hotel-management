@@ -14,6 +14,15 @@ p ,h1,figure {
     padding:0;
     
 }
+.mat-tab-links {
+    overflow:auto!important;
+    min-width:100px!important;
+
+}
+.myclass{
+    overflow:auto!important;
+}
+
 .modal-backdrop{
     position: relative;
 }
@@ -32,6 +41,11 @@ p ,h1,figure {
     50% {
         transform: scale(1);
     }
+}
+@media (max-width: 599px){
+.mat-tab-link {
+    min-width: 115px!important;
+}
 }
 /* 
 .cdk-overlay-container .cdk-overlay-pane{

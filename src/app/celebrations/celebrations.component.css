@@ -6,7 +6,7 @@
 .sec2{
     background: #ccc;
     text-align: center;
-    height: 300px;
+    height: auto;
     
 }
 .sec2 p{
@@ -18,7 +18,10 @@
 }
 .sec2 h4{
     color: rgb(117, 108, 108);  
-    margin: 40px;
+    margin: 0px;
+    line-height:inherit;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 .sec3 img{
     height:500px;
@@ -26,14 +29,18 @@
     object-fit: cover;
 }
 .sec3{
-    position: relative;
+   background: url('../../assets/images/hotel.jpg');
+   background-size: cover;
+   min-height: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
     
 }
 .sec3 p{
-    position: absolute;
-    left:25%;
-    top:50%;
-    font-size: 40px;
+   
+    font-size: 7vw;
     color: #ccc;   
     font-weight: bold; 
 }
@@ -43,7 +50,7 @@
     justify-content: center;
 }
 mat-card{
-    height:620px;
+    height:auto;
    margin: 20px;
 }
 .text p{

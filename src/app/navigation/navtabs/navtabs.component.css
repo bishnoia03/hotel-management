@@ -7,3 +7,8 @@
 .navtabs-container nav a:hover{
     color: #000000;
 }
+.mat-tab-links {
+    overflow:auto!important;
+    min-width:100px!important;
+
+}

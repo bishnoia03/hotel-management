@@ -1,28 +1,25 @@
 .container-fluid{
     margin: 0;
     padding: 0;
-    position: relative;
+    
 }
-.container-fluid{
-   position: relative;
-}
+
 .zaika{
     position: absolute;
     color: #fff;
-  
+    text-align: center;
     font-family: 'Cute Font', cursive;
-   top: 40%;
-   left: 25%;
+    top: 35%;
+    left: 20%;
+    object-fit: cover;
 }
 .zaika h1{
-    font-size: 6rem;
+    font-size: 6vw;
     text-align: center;
 }
 .item{
     width:100%;
-    height:300px;
-    
-    object-fit: cover;
+    height:400px;
     filter: brightness(30%);
 
 }
@@ -76,6 +73,9 @@
     align-items: center;
     justify-content: center;
 }
+.panel-title h2{
+    margin: 0;
+}
 .exp-inner{
     background: #000;
     min-height: 200px;
@@ -89,7 +89,7 @@ mat-grid-tile {
     background: lightblue;
   }
 .mat-card{
-    height: 1030px;
+    height: auto;
     margin-top: 40px;
 }
 .mat-card p,h3{
@@ -116,6 +116,7 @@ mat-grid-tile {
     padding-left: 20px;
     padding-top: 10px;
 }
+
 .exp-inner h3{
     color: #ccc;
     display: flex;
@@ -131,4 +132,26 @@ mat-grid-tile {
         align-items: center;
         justify-content: center;
     }
+    .panel-title h2{
+        font-size: 15px;
+    }
+ }
+ @media (max-width:600px){
+     .zaika{
+        top: 20%;
+        left: 18%;
+     }
+ }
+ @media (max-width:400px){
+     .zaika{
+         top: 16%;
+         left:14%;
+     }
+ }
+ @media (max-width:600px){
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+        display: block;
+        max-width: 100%;
+        height: 100% !important;
+ }
  }
