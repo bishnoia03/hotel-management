@@ -22,14 +22,27 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { LegalnoticeComponent } from './legalnotice/legalnotice.component';
+import { SitepolicyComponent } from './sitepolicy/sitepolicy.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 
 
 const routes: Routes = [
   { path: '', redirectTo:  'home' , pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'privacy-policy', component: PrivacypolicyComponent },
   { path: 'accomodation', component: AccomodationComponent},
   { path: 'contact-us', component: ContactusComponent},
+  { path: 'about-us', component: AboutusComponent},
+  { path: 'legal-notice', component: LegalnoticeComponent},
+  { path: 'site-policy', component: SitepolicyComponent},
+  { path: 'sitemap', component: SitemapComponent},
+  { path: 'dashboard', component: DashboardComponent},
 
   { path: 'lifestyle', component: LifeStyleComponent},
 
@@ -72,5 +85,12 @@ export const routingComponent = [
     SidenavListComponent,
     NavtabsComponent,
     ContactusComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    AboutusComponent,
+    LegalnoticeComponent,
+    SitepolicyComponent,
+    PrivacypolicyComponent,
+    SitemapComponent,
+    DashboardComponent
+
 ];

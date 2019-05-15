@@ -1,0 +1,18 @@
+.full{
+    min-height: 500px;
+    background: #ccc;
+}
+.first h1{
+    padding-top: 100px;
+    text-align: center;
+}
+.second{
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    line-height: 10mm;
+}
+.second p{
+   padding-top: 20px;
+   
+}
