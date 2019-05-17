@@ -100,22 +100,19 @@
     <div class="modal" id="myModal">
         <div class="modal-dialog">
           <div class="modal-content">
-              <!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
-                  {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
-                </button> -->
-                <h1 style="text-align:center;padding-top:20px;">Hotel Reservation Form</h1>
+             <h1>Hotel Reservation Form</h1>
                 <mat-horizontal-stepper [linear]="isLinear" #stepper>
                   <mat-step [stepControl]="firstFormGroup">
                     <form [formGroup]="firstFormGroup">
-                      <ng-template matStepLabel>Fill out your name</ng-template>
+                      <ng-template matStepLabel>Name</ng-template>
                       
                           <div class="flname">
-                            <span>  <mat-form-field>
+                             <mat-form-field>
                                 <input matInput placeholder="First name" formControlName="firstCtrl" required>
-                              </mat-form-field></span>
-                               <span style="float:right;"> <mat-form-field>
+                              </mat-form-field>
+                              <mat-form-field class="right">
                                   <input matInput placeholder="Last name" formControlName="firstCtrl" required>
-                                </mat-form-field></span>
+                                </mat-form-field>
                           </div>
                           <div class="first-form">
                             <mat-form-field>
@@ -132,7 +129,7 @@
                   </mat-step>
                   <mat-step [stepControl]="secondFormGroup">
                     <form [formGroup]="secondFormGroup">
-                      <ng-template matStepLabel>Fill out your address</ng-template>
+                      <ng-template matStepLabel>Address</ng-template>
                     
                          <div class="first-form">
                             <mat-form-field>
@@ -140,23 +137,23 @@
                           
                             </mat-form-field>
                             <div class="flname">
-                                <span>
+                             
                                     <mat-form-field>
                                     <input matInput placeholder="City" type="text" formControlName="firstCtrl" required>
                                   </mat-form-field>
-                                  </span>
-                                  <span style="float:right;">
+                              
+                                 
                                     <mat-form-field>
                                       <input matInput placeholder="State" type="text" formControlName="firstCtrl" required>
                                     </mat-form-field>
-                                  </span>
+                                
                             </div>
                         </div>
                         <div class="flname">
-                            <span>  <mat-form-field>
+                    <mat-form-field>
                                 <input matInput placeholder="Postal/Zip Code" type="number" formControlName="firstCtrl" required>
-                              </mat-form-field></span>
-                               <span style="float:right;"> <mat-form-field>
+                              </mat-form-field>
+                             <mat-form-field>
                                   <mat-label>Countary</mat-label>
                                   <mat-select>
                                       <mat-option data-countryCode="DZ" value="213">Algeria (+213)</mat-option>
@@ -374,7 +371,7 @@
                                       <mat-option data-countryCode="ZM" value="260">Zambia (+260)</mat-option>
                                       <mat-option data-countryCode="ZW" value="263">Zimbabwe (+263)</mat-option>
                                   </mat-select>
-                                </mat-form-field></span>
+                                </mat-form-field>
                           </div>
                      
                       <div>
@@ -384,12 +381,37 @@
                     </form>
                   </mat-step>
                   <mat-step>
-                    <ng-template matStepLabel>Done</ng-template>
-                  
+                    <ng-template matStepLabel>Detail</ng-template>
+                    <form [formGroup]="firstFormGroup">
+                        <ng-template matStepLabel>Name</ng-template>
+                        
+                            <div class="flname">
+                               <mat-form-field>
+                                  <input matInput placeholder="Promo Code" formControlName="firstCtrl" required>
+                                </mat-form-field>
+                                <mat-form-field class="right">
+                                    <mat-label>Room Type</mat-label>
+                                    <mat-select>
+                                      <mat-option>Single Room</mat-option>
+                                      <mat-option>Twin Room</mat-option>
+                                      <mat-option>Tripple Room</mat-option>
+                                      <mat-option>King Size</mat-option>
+                                      <mat-option>Queen Size</mat-option>
+                                      <mat-option>Sea Face</mat-option>
+                                    </mat-select>
+                                  </mat-form-field>
+                            </div>
+                            <div class="first-form">
+                                <button (click)="fun(name.value)">-</button>
+                                <input type="text" #name value="0"/>
+                                <button (click)="fun1(name.value)">+</button>
+
+                        </div>
+                        </form>
                     <div>
                       <button mat-button matStepperPrevious>Back</button>
                       <button mat-button (click)="stepper.reset()">Reset</button>
-                      <button mat-button (click)="mysnackBar()" data-dismiss="modal" (click)="stepper.reset()">Submit</button>
+                      <button mat-button (click)="mysnackBar()" data-dismiss="modal">Submit</button>
                     </div>
                   </mat-step>
                 </mat-horizontal-stepper>

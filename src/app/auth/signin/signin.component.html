@@ -1,23 +1,14 @@
-<div class="container login-container">
-  <div class="row">
-      <div class="col-md-6 login-form-1">
-          <h3>Login Form </h3>
-          <form>
-              <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Email *" value="" />
-              </div>
-              <div class="form-group">
-                  <input type="password" #name class="form-control" placeholder="Your Password *" value="" />
-              </div>
-              <div ></div>
-              <div class="form-group button">
-               <a routerLink="/{{db}}"> <button mat-raised-button color="primary" (click)="fun(name.value)">LOGIN</button></a>
-
-              </div>
-              <div class="form-group" >
-                  <a routerLink="" class="ForgetPwd">Forget Password?</a>
-              </div>
-          </form>
-      </div>
-   </div>
-</div>
+     <div id="main" class="main">
+               <h1 style="color:#262626"><i class="fa fa-map-marker"></i> Geo Attendance System </h1>
+               <span class="title" style="color:#fff;border-radius:60px;background:rgba(0,0,0,0.6);padding:10px 20px;"><i class="fa fa-sign-in"></i> Employee Login</span>
+           <div class="myForm">
+            <form action="" method="post">
+                   <label style="color:#111"><i class="fa fa-user-circle"></i> Employee ID:</label>
+                   <input type="email" name="emp_email" id="emp_email" class="form-control" placeholder="Employee ID" autofocus >
+                   <label style="color:#111"><i class="fa fa-lock"></i> Password:</label>
+                   <input type="password" name="emp_password" id="emp_password" class="form-control" placeholder="Password" >
+                   <button type="submit" name="go" class="btn"><i class="fa fa-sign-in"></i> Log in</button>
+            </form>
+           </div> 
+        </div>
+     

@@ -16,7 +16,12 @@
 }
 .group{
     padding-top: 30px;
+    padding-bottom: 20px;
 
+
+}
+.group:hover{
+    box-shadow: 2px 0px 7px 7px #ccc;
 }
 .main{
     border:1px solid #ccc;

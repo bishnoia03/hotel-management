@@ -11,22 +11,24 @@ export class HomeComponent implements OnInit {
   action: string;
   countary: string;
   viewcountary: string;
-  isLinear = false;
+  isLinear = true;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
+  numb: number;
   constructor(private formBuilder: FormBuilder, private snackBar: MatSnackBar ) { }
   mysnackBar() {
     this.snackBar.open(this.message = 'Reservation Success!', this.action = '', {
-      duration: 4000 ,
+      duration: 2500 ,
 
     });
   }
+  
   ngOnInit() {
     this.firstFormGroup = this.formBuilder.group({
       firstCtrl: ['', Validators.required]
     });
     this.secondFormGroup = this.formBuilder.group({
-      secondCtrl: ['', Validators.required]
+      secondCtrl: ['', ]
     });
   }
 }

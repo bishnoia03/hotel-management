@@ -73,10 +73,11 @@
   }
      .modal-content{
     width:60%;
-    margin: calc(100% - 400px);
+   height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;          
+    justify-content: center;
+
     }
     .modal .fa,
 .fas {
