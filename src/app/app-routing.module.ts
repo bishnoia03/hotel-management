@@ -11,9 +11,6 @@ import { WeddingsComponent } from './weddings/weddings.component';
 
 import { CelebrationsComponent } from './celebrations/celebrations.component';
 import { OffersComponent } from './offers/offers.component';
-import { AuthComponent } from './auth/auth.component';
-import { SigninComponent } from './auth/signin/signin.component';
-
 import { FoodAndBeverageComponent } from './food-and-beverage/food-and-beverage.component';
 
 import { HomeComponent } from './home/home.component';
@@ -27,7 +24,6 @@ import { LegalnoticeComponent } from './legalnotice/legalnotice.component';
 import { SitepolicyComponent } from './sitepolicy/sitepolicy.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -42,7 +38,6 @@ const routes: Routes = [
   { path: 'legal-notice', component: LegalnoticeComponent},
   { path: 'site-policy', component: SitepolicyComponent},
   { path: 'sitemap', component: SitemapComponent},
-  { path: 'dashboard', component: DashboardComponent},
 
   { path: 'lifestyle', component: LifeStyleComponent},
 
@@ -50,8 +45,6 @@ const routes: Routes = [
 
   { path: 'offers', component: OffersComponent},
   { path: 'weddings', component: CelebrationsComponent},
-  { path: 'auth', component: AuthComponent},
-  { path: 'signin', component: SigninComponent},
 
   { path: 'food-and-beverage', component: FoodAndBeverageComponent},
   { path: 'foodandbeverage', redirectTo: 'food-and-beverage', pathMatch: 'full'},
@@ -75,8 +68,6 @@ export const routingComponent = [
 
     CelebrationsComponent,
     OffersComponent,
-    AuthComponent,
-    SigninComponent,
 
     FoodAndBeverageComponent,
 
@@ -90,7 +81,6 @@ export const routingComponent = [
     LegalnoticeComponent,
     SitepolicyComponent,
     PrivacypolicyComponent,
-    SitemapComponent,
-    DashboardComponent
+    SitemapComponent
 
 ];
