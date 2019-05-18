@@ -1,7 +1,10 @@
 .hero-container {
-    background: url('../../assets/images/francesco-ungaro-1180157-unsplash.jpg')center center no-repeat;
+    background: url('../../assets/images/francesco-ungaro-1180157-unsplash.jpg')center center no-repeat fixed;
     background-size: cover;
-    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  
   }
   
   .book-now-container {
@@ -28,7 +31,7 @@
   }
   .mat-display-1 {
     margin:0;
-    padding-top: 110px;
+    padding-top: 200px;
   }
   
  
@@ -172,6 +175,23 @@
 .modal-content h1{
   text-align:center;
    padding-top:20px;
+}
+.number button{
+  min-width: 35px !important;
+  min-height: 25px !important;
+}
+.number input{
+  min-width: 40px;
+  width: 41px;
+}
+.number{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.calender{
+  margin-top: 10px;
 }
   @media all and (max-width: 768px) {
     .goa h3{

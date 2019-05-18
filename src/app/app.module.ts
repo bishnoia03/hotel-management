@@ -5,7 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule , routingComponent } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
-
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './matrial.module';
@@ -27,7 +27,8 @@ import { HomeComponent } from './home/home.component';
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    NgxDaterangepickerMd.forRoot()
   ],
   bootstrap: [AppComponent],
   providers: []

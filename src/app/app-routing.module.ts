@@ -46,10 +46,10 @@ const routes: Routes = [
 
   { path: 'lifestyle', component: LifeStyleComponent},
 
-  { path: 'weddings', component: WeddingsComponent},
+  { path: 'celebrations', component: WeddingsComponent},
 
   { path: 'offers', component: OffersComponent},
-  { path: 'celebrations', component: CelebrationsComponent},
+  { path: 'weddings', component: CelebrationsComponent},
   { path: 'auth', component: AuthComponent},
   { path: 'signin', component: SigninComponent},
 

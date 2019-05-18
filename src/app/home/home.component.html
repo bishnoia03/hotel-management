@@ -1,4 +1,5 @@
 <div class="hero-container">
+    
   <div class="book-now-container">
     <div fxFlex fxLayoutAlign="flex-end">
       <button class="book-now-button" mat-stroked-button color="primary" data-toggle="modal" data-target="#myModal">
@@ -392,20 +393,25 @@
                                 <mat-form-field class="right">
                                     <mat-label>Room Type</mat-label>
                                     <mat-select>
-                                      <mat-option>Single Room</mat-option>
-                                      <mat-option>Twin Room</mat-option>
-                                      <mat-option>Tripple Room</mat-option>
-                                      <mat-option>King Size</mat-option>
-                                      <mat-option>Queen Size</mat-option>
-                                      <mat-option>Sea Face</mat-option>
-                                    </mat-select>
+                                      <mat-option value="1">Single Room</mat-option>
+                                      <mat-option value="2">Twin Room</mat-option>
+                                      <mat-option value="3">Tripple Room</mat-option>
+                                      <mat-option value="4">King Size</mat-option>
+                                      <mat-option value="5">Queen Size</mat-option>
+                                      <mat-option value="6">Sea Face</mat-option>
+                                    </mat-select>                                  
                                   </mat-form-field>
+                                  
                             </div>
-                            <div class="first-form">
-                                <button (click)="fun(name.value)">-</button>
-                                <input type="text" #name value="0"/>
-                                <button (click)="fun1(name.value)">+</button>
+                            <div class="number">
+                              <mat-label>Select Person:</mat-label>
+                                <button mat-raised-button color="primary"  (click)="fun1()">-</button>
+                                <input matInput type="number" #name [value]="iota">
+                                <button mat-raised-button color="primary" (click)="fun2()">+</button>
 
+                        </div>
+                        <div class="calender">
+                            <input matInput placeholder="Select Range from Calender" type="text" ngxDaterangepickerMd  class="form-control"/>
                         </div>
                         </form>
                     <div>
