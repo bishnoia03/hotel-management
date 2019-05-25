@@ -72,13 +72,45 @@
         line-height: 0px; 
   }
      .modal-content{
-    width:60%;
+    width:95%;
    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
     }
+    .first-form , .flname{
+        display: grid;
+      }
+      
+      .mat-snack-bar-container {
+      
+       color: green;
+       background:#fff;
+     
+      
+     }
+     .modal-content h1{
+       text-align:center;
+        padding-top:20px;
+     }
+     .number button{
+       min-width: 35px !important;
+       min-height: 25px !important;
+     }
+     .number input{
+       min-width: 40px;
+       width: 41px;
+     }
+     .number{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+     
+     }
+     .calender{
+       margin-top: 10px;
+     }
     .modal .fa,
 .fas {
     color: green;
@@ -124,3 +156,8 @@
                text-align: center;
            }
       }
+      @media (max-width:450px){
+        .modal-content h1{
+          font-size: 22px;
+        }
+         }

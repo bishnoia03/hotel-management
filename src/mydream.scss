@@ -2,20 +2,20 @@
 @include mat-core();
 
 $my-primary: (
-    50 : #f6fbfb,
-    100 : #e8f5f4,
-    200 : #ffffff,
-    300 : #ddf1ef,
-    400 : #bee4e0,
-    500 : #b2dfdb,
-    600 : #abdbd7,
-    700 : #a2d7d2,
-    800 : #99d2cd,
-    900 : #5cbbb3,
+    50 : #e1fdfa,
+    100 : #b4f9f3,
+    200 : #83f6ec,
+    300 : #51f2e4,
+    400 : #2befde,
+    500 : #06ecd8,
+    600 : #05ead4,
+    700 : #04e7ce,
+    800 : #03e4c8,
+    900 : #02dfbf,
     A100 : #ffffff,
-    A200 : #ffffff,
-    A400 : #f6fffe,
-    A700 : #dcfffc,
+    A200 : #d3fff8,
+    A400 : #a0ffef,
+    A700 : #86ffeb,
     contrast: (
         50 : #000000,
         100 : #000000,
@@ -119,5 +119,5 @@ $my-typography: mat-typography-config(
 .mat-action-list .mat-list-item:hover, 
 .mat-action-list .mat-list-item:focus{
     background-color:  mat-color($mydream-primary,300 );
-    color: mat-color($mydream-primary, 900);
+    color: mat-color($mydream-primary, 700);
 }

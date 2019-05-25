@@ -5,8 +5,7 @@
     $acceent: map-get($mydream, accent);
 
     //All our style will go here....
-    .navtabs-container {
-        background-color: mat-color($mydream-primary,900 );
+   .navtabs-container{
+        background-color: mat-color($mydream-primary,100);
     }
-   
 }
